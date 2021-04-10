@@ -30,7 +30,7 @@ PetController.post("/newPet", async (req, res) => {
   });
   
   
-PetController.get("/all", async (req, res) => {
+PetController.get("/all",  (req, res) => {
     try {
       const pets = await PetModel.findAll({
         where: {

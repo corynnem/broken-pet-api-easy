@@ -3,7 +3,7 @@ const db = require('../db')
 
 const User = db.define('user', {
     username: {
-        type: DataTypes.STRING(100),
+        tope: DataTypes.STRING(100),
         allowNull: false, 
         unique: true,
     },
