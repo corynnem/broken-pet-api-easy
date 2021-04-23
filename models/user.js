@@ -8,7 +8,7 @@ const User = db.define('user', {
         unique: true,
     },
     password: {
-        type: DataTypes.STRING, 
+        type: DataTypes.password, 
         allowNull: false
     }
 });
