@@ -17,7 +17,7 @@ step 3: run `nodemon`, and begin the debugging process!
 
 There are 11 errors to solve, one in each file.
 
-You WILL need postman and pgAdmin to solve some of the errors, 
-so make sure to...
-- change the DATABASE_URL in the .env file
-- create a database in pgAdmin named 'pet-api'
+You WILL need postman and pgAdmin to solve some of the errors, so make sure to...
+    - change the DATABASE_URL in the .env file to contain your information
+    - change the JWT_SECRET in the .env file to contain a JWT_SECRET of your choice
+    - create a database in pgAdmin named 'pet-api'
