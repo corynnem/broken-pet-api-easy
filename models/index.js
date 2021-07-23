@@ -6,7 +6,7 @@ User.hasMany(PetModel)
 PetModel.belongsTo(User)
 
 
-model.exports = {
+module.exports = {
     User,
     PetModel,
 }

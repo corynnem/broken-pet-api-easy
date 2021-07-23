@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const db = require('../db')
 
-cosnt Pet = db.define('pet', {
+const Pet = db.define('pet', {
     petName: {
         type: DataTypes.STRING,
         allowNull: false,

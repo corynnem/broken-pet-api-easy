@@ -2,7 +2,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { Router } = require('express');
 const { User } = require('../models');
-const { UniqueConstraintError } = require('sequelize/lib/errors')
+const { UniqueConstraintError } = require('sequelize/lib/errors');
+const { petcontroller } = require('.');
 
 const userController = Router();
 
@@ -56,3 +57,6 @@ userController.post('/login', async (req, res) => {
         })
     }
 })
+
+
+module.exports = userController;

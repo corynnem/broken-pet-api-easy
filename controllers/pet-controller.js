@@ -16,13 +16,11 @@ PetController.post("/newPet", async (req, res) => {
         breed,
         userId: req.user.id,
       });
-      console.log(req.user)
       res.json({
         message: "List Created",
         list: newPet,
       });
     } catch (e) {
-      console.log(e);
       res.status(500).json({
         message: "failed",
       });
@@ -30,7 +28,7 @@ PetController.post("/newPet", async (req, res) => {
   });
   
   
-PetController.get("/all",  (req, res) => {
+PetController.get("/all", async(req, res) => {
     try {
       const pets = await PetModel.findAll({
         where: {
